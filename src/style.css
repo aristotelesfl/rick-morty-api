@@ -43,7 +43,8 @@ header .navbar a img {
 
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 100%;
     background-color: rgb(32, 32, 32);
@@ -51,5 +52,15 @@ main {
 
 main .main-logo {
     margin: 20px;
-    height: 150px;
+    max-width: 500px;
+}
+
+main .load-more {
+    margin-bottom: 20px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 0;
+    background-color: rgb(100, 127, 144);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
 }
