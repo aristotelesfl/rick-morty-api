@@ -4,35 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../components/cards/styles/character-card.css">
+    <link rel="stylesheet" href="../components/dialog/modalCharacters.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
         <img src="https://www.freeiconspng.com/uploads/rick-and-morty-icon-png-26.png" alt="home" class="logo">
         <div class="navbar">
-            <a id="personagens-page">
+            <a>
                 <p><i class="fa-solid fa-user"></i> Personagens</p>
             </a>
-            <a id="localizacoes-page">
+            <a>
                 <p><i class="fa-solid fa-location-dot"></i> Localizações</p>
             </a>
-            <a id="episodios-page">
+            <a>
                 <p><i class="fa-solid fa-play"></i> Episódios</p>
             </a>
         </div>
     </header>
-
     <main>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rick_and_Morty.svg/2560px-Rick_and_Morty.svg.png" alt="Rick_and_Morty" class="main-logo">
-        
+        <div class="characters" id="characters"></div>
         <button class="load-more" id="load-more">Carregar mais</button>
     </main>
-
-    <script src="src/scripts/main.js" type="module"></script>
+    <dialog class="profile" id="profile">
+        <img src="" alt="" id="image-profile">
+        <h2 id="name-profile"></h2>
+        <p class="title" id="species-profile"></p>
+        <p class="title" id="status-profile"></p>
+        <p class="title" id="origin-profile"></p>
+        <button class="close-profile" id="close-profile">ok</button>
+    </dialog>
+    <script src="../scripts/viewCharacters.js" type="module"></script>
     <script src="https://kit.fontawesome.com/4df9bca416.js" crossorigin="anonymous"></script>
 </body>
 </html>

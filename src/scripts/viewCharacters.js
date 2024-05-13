@@ -1,4 +1,4 @@
-import { mount_card } from "../cards/script/character-card.js"
+import { mount_card } from "../components/cards/scripts/character-card.js"
 
 let currentPage = 1;
 

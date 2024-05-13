@@ -1,3 +1,5 @@
+import { displayCharacterInfo } from '../../dialog/modalCharacters.js'
+
 const characters = document.querySelector('#characters')
 
 
@@ -37,6 +39,10 @@ export function mount_card(id, character_image, character_name, character_specie
     container.appendChild(character_image)
     container.appendChild(info_container)
     container.id =`character-card-${id}`
+
+    container.addEventListener('click', () => {
+        displayCharacterInfo(character_image, name, species, status, origin)
+    });
 
     characters.appendChild(container)
 }

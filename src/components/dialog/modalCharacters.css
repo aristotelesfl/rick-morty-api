@@ -1,0 +1,54 @@
+.profile::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.profile {
+    max-width: 200px;
+    padding: 30px;
+    background-color: rgb(122, 155, 176);
+    border: 0;
+    border-radius: .5rem;
+}
+
+.profile p {
+    margin: 5px;
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    color: black;
+}
+
+.profile img {
+    border-radius: 100%;
+    width: 200px;
+}
+
+.profile .title {
+    font-weight: 900;
+    color: rgb(192 223 64);
+}
+
+.profile h2 {
+    margin: 2px;
+    font-size: 18pt;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    color: rgb(255, 221, 0);
+}
+
+.profile .close-profile {
+    width: 100%;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: rgb(255, 221, 0);
+    color: black;
+    border: 0;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+}
+
+.profile .close-profile:hover {
+    background-color: rgb(255, 196, 0);
+}
